@@ -4,7 +4,7 @@ signal_bot.py — Bot de signaux crypto (cryptos < $1)
 - Scanne toutes les cryptos USDT sous $1 sur Gate.io
 - Analyse avec RSI, EMA, MACD, Bollinger Bands, Volume
 - Envoie les signaux sur ntfy.sh (téléphone)
-- Tourne 24h/24 sur Railway (ou n'importe quel serveur)
+- Tourne 24h/24 sur Railway (ou n'importe quel serveur)h
 - Ne trade PAS — lecture seule, zéro risque
 """
 
@@ -244,7 +244,7 @@ def main():
     )
 
     last_signal = {}
-    COOLDOWN    = 3600  # 1h entre deux signaux pour le meme symbole
+    COOLDOWN    = 14400  # 1h entre deux signaux pour le meme symbole
 
     cycle = 0
     while True:
